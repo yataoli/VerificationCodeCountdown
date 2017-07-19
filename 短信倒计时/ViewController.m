@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "VerificationCodeVC.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) UIButton *sendButton;
 
 @end
 
@@ -16,9 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
-}
+    _sendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _sendButton.frame = CGRectMake(100, 200, 200, 50);
+    _sendButton.titleLabel.font = [UIFont systemFontOfSize:15.0];
+    [_sendButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_sendButton setTitle:@"发送验证码" forState:UIControlStateNormal];
+    [_sendButton addTarget:self action:@selector(sendButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_sendButton];
 
+    
+}
+#pragma mark - 发送短信按钮
+- (void)sendButtonClick:(UIButton *)sender {
+    
+    
+    VerificationCodeVC *vc = [[VerificationCodeVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

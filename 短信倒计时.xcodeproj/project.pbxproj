@@ -15,6 +15,7 @@
 		8AA1A0EF1F1D9B4D0041A66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA1A0ED1F1D9B4D0041A66E /* LaunchScreen.storyboard */; };
 		8AA1A0FA1F1D9B4D0041A66E /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1A0F91F1D9B4D0041A66E /* _____Tests.m */; };
 		8AA1A1051F1D9B4E0041A66E /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1A1041F1D9B4E0041A66E /* _____UITests.m */; };
+		8AA1A1141F1DDA980041A66E /* VerificationCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1A1131F1DDA980041A66E /* VerificationCodeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8AA1A1001F1D9B4E0041A66E /* 短信倒计时UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "短信倒计时UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA1A1041F1D9B4E0041A66E /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		8AA1A1061F1D9B4E0041A66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA1A1121F1DDA980041A66E /* VerificationCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationCodeVC.h; sourceTree = "<group>"; };
+		8AA1A1131F1DDA980041A66E /* VerificationCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationCodeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				8AA1A0E31F1D9B4D0041A66E /* AppDelegate.m */,
 				8AA1A0E51F1D9B4D0041A66E /* ViewController.h */,
 				8AA1A0E61F1D9B4D0041A66E /* ViewController.m */,
+				8AA1A1121F1DDA980041A66E /* VerificationCodeVC.h */,
+				8AA1A1131F1DDA980041A66E /* VerificationCodeVC.m */,
 				8AA1A0E81F1D9B4D0041A66E /* Main.storyboard */,
 				8AA1A0EB1F1D9B4D0041A66E /* Assets.xcassets */,
 				8AA1A0ED1F1D9B4D0041A66E /* LaunchScreen.storyboard */,
@@ -207,7 +212,7 @@
 				TargetAttributes = {
 					8AA1A0DB1F1D9B4D0041A66E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3C3JL5CW6K;
+						DevelopmentTeam = WJ9SVRFBU9;
 						ProvisioningStyle = Automatic;
 					};
 					8AA1A0F41F1D9B4D0041A66E = {
@@ -278,6 +283,7 @@
 			files = (
 				8AA1A0E71F1D9B4D0041A66E /* ViewController.m in Sources */,
 				8AA1A0E41F1D9B4D0041A66E /* AppDelegate.m in Sources */,
+				8AA1A1141F1DDA980041A66E /* VerificationCodeVC.m in Sources */,
 				8AA1A0E11F1D9B4D0041A66E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,10 +435,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3C3JL5CW6K;
+				DEVELOPMENT_TEAM = WJ9SVRFBU9;
 				INFOPLIST_FILE = "短信倒计时/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhengzhouluke.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,10 +448,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3C3JL5CW6K;
+				DEVELOPMENT_TEAM = WJ9SVRFBU9;
 				INFOPLIST_FILE = "短信倒计时/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhengzhouluke.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +526,7 @@
 				8AA1A10B1F1D9B4E0041A66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AA1A10C1F1D9B4E0041A66E /* Build configuration list for PBXNativeTarget "短信倒计时Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +535,7 @@
 				8AA1A10E1F1D9B4E0041A66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AA1A10F1F1D9B4E0041A66E /* Build configuration list for PBXNativeTarget "短信倒计时UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +544,7 @@
 				8AA1A1111F1D9B4E0041A66E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
